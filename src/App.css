@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #1e272e;
+  color: #d3d9d4;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.game-container {
+  text-align: center;
+  padding: 2rem;
+  background: #2e3944;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 3rem auto;
+}
+
+h1 {
+  color: #84b8ec;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #124e66;
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #84b8ec;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  color: #721c24;
+  background-color: #acc6ec;
+  text-align: center;
+}
+
+.upgrade-container {
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  color: #d3d9d4;
+}
+
+.upgrade-button {
+  background-color: #2e3944;
+  color: #d3d9d4;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid #84b8ec;
+  transition: background-color 0.3s ease;
+}
+
+.upgrade-button:hover {
+  background-color: #84b8ec;
+  color: #124e66;
+}
+
+/* phone */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  .game-container {
+    padding: 1rem;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .message {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .upgrade-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* tablet or medium size devices etc */
+@media (min-width: 577px) and (max-width: 768px) {
+  .game-container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  button {
+    padding: 0.7rem 1.8rem;
+    font-size: 1.05rem;
+  }
+
+  .message {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .upgrade-button {
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+  }
+}
+
+/* desktop */
+@media (min-width: 769px) {
+  .game-container {
+    padding: 2rem;
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .message {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .upgrade-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}

@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Upgrades from "./components/Upgrades";
+import "./App.css";
 
 export default function App() {
   const [cookieCount, setCookieCount] = useState(0);
@@ -17,35 +19,19 @@ export default function App() {
     setCookieCount(cookieCount + cookiesPerClick);
   }
 
-  function buyMagicFlour() {
-    if (cookieCount >= 50) {
-      setCookieCount(cookieCount - 50);
-      setMessage("Magic Flour purchased!");
-    } else {
-      setMessage("Not enough cookies for Magic Flour!");
-    }
-  }
-
-  function buySpecialChocolate() {
-    if (cookieCount >= 100) {
-      setCookieCount(cookieCount - 100);
-      setMessage("Special Chocolate purchased!");
-    } else {
-      setMessage("Not enough cookies for Special Chocolate!");
-    }
-  }
-
   return (
-    <dev>
+    <div className="game-container">
       <h1>Cookie Clicker Game</h1>
       <p>Cookies: {cookieCount}</p>
-      <button onClick={handleClick}>Click for Cookies</button>
-      <h2>Upgrades</h2>
-      <button onClick={buyMagicFlour}>Buy Magic Flour (50 Cookies)</button>
-      <button onClick={buySpecialChocolate}>
-        Buy Special Chocolate (100 Cookies)
+      <button className="main-button" onClick={handleClick}>
+        Click for Cookies
       </button>
-      <p>{message}</p>
-    </dev>
+      <Upgrades
+        cookieCount={cookieCount}
+        setCookieCount={setCookieCount}
+        setMessage={setMessage}
+      />
+      <p className="message">{message}</p>
+    </div>
   );
 }
